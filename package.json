@@ -1,0 +1,27 @@
+{
+  "name": "angular-coursera",
+  "version": "1.0.0",
+  "description": "Curso de angulasJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files ./**/*",
+    "bs": "browser-sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gonzalo2683/angular-coursera.git"
+  },
+  "keywords": [
+    "angularJs"
+  ],
+  "author": "Gonzalo Guevara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gonzalo2683/angular-coursera/issues"
+  },
+  "homepage": "https://github.com/Gonzalo2683/angular-coursera#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8"
+  }
+}
