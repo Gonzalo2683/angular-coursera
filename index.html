@@ -16,6 +16,25 @@
             <li ng-repeat="cosa in cosas">{{ cosa }} - {{ $index }}</li>
         </ul>
     </div>
+
+    <div ng-controller="nombreCalculado">
+        Nombre:
+        <input type="text" ng-model="name">
+        <div>Total largo nombre: {{ largoNombre() }}</div>
+
+    </div>
+
+
+    <div ng-controller="inyeccionDependencia">
+        <h5>Dependencias inyección</h5>
+        <div>
+            <input type="text" ng-model="name" ng-blur="upper()">
+        </div>
+    </div>
+
+    <div ng-controller="otraInyeccion">
+        <span>{{ name }}</span>
+    </div>
     
     <script src="./node_modules/angular/angular.js"></script>
     <script src="./js/app.js"></script>
