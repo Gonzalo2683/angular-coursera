@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>wewe
-    <span>Test aqa sd</span> tetstsjdjdjdjd mas sds nsnsnd hosls wew
+
+<body>
+    <div ng-controller="myController">
+        <span>{{ name }}</span>
+        <div><input type="text" ng-model="name"></div>
+        <ul>
+            <li ng-repeat="cosa in cosas">{{ cosa }} - {{ $index }}</li>
+        </ul>
+    </div>
+    
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>

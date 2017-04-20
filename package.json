@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --files ./**/*",
-    "bs": "browser-sync"
+    "bs": "browser-sync",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,11 @@
   },
   "homepage": "https://github.com/Gonzalo2683/angular-coursera#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8"
+    "@types/angular": "^1.6.15",
+    "browser-sync": "^2.18.8",
+    "typescript": "^2.2.2"
+  },
+  "dependencies": {
+    "angular": "^1.6.4"
   }
 }
