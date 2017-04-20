@@ -23,7 +23,10 @@
         }
     })
     .controller('otraInyeccion', funcOtraInyeccion)
-    funcOtraInyeccion.$inject = ['$scope', '$filter']
+    // Esta forma de anotar permite que los minificadores,
+    // cambien los nombres de las funciones con seguridad 
+    // y angular siga funcionando
+    funcOtraInyeccion.$inject = ['$scope', '$filter']; 
     function funcOtraInyeccion($scope, $filter){
         $scope.name = 'Intectado';
     }
